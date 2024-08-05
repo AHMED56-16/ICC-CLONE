@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Official International Cricket Council Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar-custom, .card-body, .nav-link, .navbar-brand {
+            background-color: #00175F;
+            color: white !important;
+        }
+      
+.img-fluid {
+    position: relative;
+    display: block;
+}
+.overlay-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 100%; /* Ensure the container doesn't exceed the width of its parent */
+}
+
+.overlay-container img {
+  width: 100%;
+  height: auto;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 60%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1rem; 
+  z-index: 10;
+  width: 90%; 
+  max-width: 90%; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  /* box-sizing: border-box;  */
+}
+
+@media (max-width: 768px) {
+  .overlay-text {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 485px) {
+  .overlay-text {
+    font-size: 0.5rem;
+    background-color: transparent !important;
+  }
+}
+@media (max-width: 400px) {
+  .overlay-text {
+    color: transparent !important;;
+  }
+}
+
+
+        .card {
+            width: 18rem;
+        }
+        .card-deck {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .table-color {
+            color: black !important;
+        }
+        .womens-table {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: 45px;
+        }
+        .footer {
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .footer div {
+            margin-bottom: 30px;
+        }
+        .bumrah-image {
+            border: 5px solid goldenrod;
+            border-radius: 10px;
+            height: 350px; 
+            width: 250px; 
+            float: right;
+           margin-right: 100px;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #00175F;
+            padding: 20px;
+            color: white;
+        }
+        .flex-container img {
+            max-width: 50%;
+        }
+        .text-container {
+            max-width: 50%;
+        }
+        .footer img {
+            max-width: 100%;
+        }
+        @media (max-width: 768px) {
+            .flex-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .flex-container img {
+                max-width: 100%;
+                margin-bottom: 20px;
+            }
+            .text-container {
+                max-width: 100%;
+            }
+        }
+        @media (max-width: 576px) {
+            .card {
+                width: 100%;
+            }
+            .footer {
+                width: 100%;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="/Pics/ICC LOGO.jpeg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+          ICC
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Matches</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Rankings</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Teams</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Awards</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Travel</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Videos</a></li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="overlay-container">
+      <img src="./Pics/Nominies.png" class="img-fluid" alt="Nominees">
+      <div class="overlay-text">
+        <p>Mens Player of the Month</p>
+        <h1>ICC Men’s Player of the Month nominees for July 2024 revealed</h1>
+        <p><small>9h</small></p>
+      </div>
+    </div>
+    
+    </div>
+    <div class="container">
+      <div class="card-deck">
+        <div class="card">
+          <img src="./Pics/Ban.jpeg" class="card-img-top" alt="Sri Lanka Men">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./Pics/Nep.jpeg" class="card-img-top" alt="Bumrah">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./Pics/ENg.jpeg" class="card-img-top" alt="Sri Lanka Women">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h1>Men's team rankings</h1>
+    <div class="card-deck">
+      <div class="table-container">
+        <table class="table table-bordered table-color">
+          <thead>
+            <tr>
+              <th>Column 1</th>
+              <th>Column 2</th>
+              <th>Column 3</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Row 1 Col 1</td>
+              <td>Row 1 Col 2</td>
+              <td>Row 1 Col 3</td>
+            </tr>
+            <tr>
+              <td>Row 2 Col 1</td>
+              <td>Row 2 Col 2</td>
+              <td>Row 2 Col 3</td>
+            </tr>
+            <tr>
+              <td>Row 3 Col 1</td>
+              <td>Row 3 Col 2</td>
+              <td>Row 3 Col 3</td>
+            </tr>
+            <tr>
+              <td>Row 4 Col 1</td>
+              <td>Row 4 Col 2</td>
+              <td>Row 4 Col 3</td>
+            </tr>
+            <tr>
+              <td>Row 5 Col 1</td>
+              <td>Row 5 Col 2</td>
+              <td>Row 5 Col 3</td>
+            </tr>
+            <tr>
+              <td>Row 6 Col 1</td>
+              <td>Row 6 Col 2</td>
+              <td>Row 6 Col 3</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="table-container">
+        <table class="table table-bordered table-color">
+          <thead>
+            <tr>
+              <th>Column 1</th>
+              <th>Column 2</th>
+              <th>Column 3</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Row 1 Col 1</td>
+              <td>Row 1 Col 2</td>
+              <td>Row 1 Col 3</td>
+            </tr>
+            <tr>
+              <td>Row 2 Col 1</td>
+              <td>Row 2 Col 2</td>
+              <td>Row 2 Col 3</td>
+            </tr>
+            <tr>
+              <td>Row 3 Col 1</td>
+              <td>Row 3 Col 2</td>
+              <td>Row 3 Col 3</td>
+            </tr>
+            <tr>
+              <td>Row 4 Col 1</td>
+              <td>Row 4 Col 2</td>
+              <td>Row 4 Col 3</td>
+            </tr>
+            <tr>
+              <td>Row 5 Col 1</td>
+              <td>Row 5 Col 2</td>
+              <td>Row 5 Col 3</td>
+            </tr>
+            <tr>
+              <td>Row 6 Col 1</td>
+              <td>Row 6 Col 2</td>
+              <td>Row 6 Col 3</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="table-container">
+        <table class="table table-bordered table-color">
+          <thead>
+            <tr>
+              <th>Column 1</th>
+              <th>Column 2</th>
+              <th>Column 3</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Row 1 Col 1</td>
+              <td>Row 1 Col 2</td>
+              <td>Row 1 Col 3</td>
+            </tr>
+            <tr>
+              <td>Row 2 Col 1</td>
+              <td>Row 2 Col 2</td>
+              <td>Row 2 Col 3</td>
+            </tr>
+            <tr>
+              <td>Row 3 Col 1</td>
+              <td>Row 3 Col 2</td>
+              <td>Row 3 Col 3</td>
+            </tr>
+            <tr>
+              <td>Row 4 Col 1</td>
+              <td>Row 4 Col 2</td>
+              <td>Row 4 Col 3</td>
+            </tr>
+            <tr>
+              <td>Row 5 Col 1</td>
+              <td>Row 5 Col 2</td>
+              <td>Row 5 Col 3</td>
+            </tr>
+            <tr>
+              <td>Row 6 Col 1</td>
+              <td>Row 6 Col 2</td>
+              <td>Row 6 Col 3</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <h1>Women's team rankings</h1>
+    <div class="womens-table">
+      <div class="table-container">
+        <table class="table table-bordered table-color">
+          <thead>
+            <tr>
+              <th>Column 1</th>
+              <th>Column 2</th>
+              <th>Column 3</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Row 1 Col 1</td>
+              <td>Row 1 Col 2</td>
+              <td>Row 1 Col 3</td>
+            </tr>
+            <tr>
+              <td>Row 2 Col 1</td>
+              <td>Row 2 Col 2</td>
+              <td>Row 2 Col 3</td>
+            </tr>
+            <tr>
+              <td>Row 3 Col 1</td>
+              <td>Row 3 Col 2</td>
+              <td>Row 3 Col 3</td>
+            </tr>
+            <tr>
+              <td>Row 4 Col 1</td>
+              <td>Row 4 Col 2</td>
+              <td>Row 4 Col 3</td>
+            </tr>
+            <tr>
+              <td>Row 5 Col 1</td>
+              <td>Row 5 Col 2</td>
+              <td>Row 5 Col 3</td>
+            </tr>
+            <tr>
+              <td>Row 6 Col 1</td>
+              <td>Row 6 Col 2</td>
+              <td>Row 6 Col 3</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="table-container">
+        <table class="table table-bordered table-color">
+          <thead>
+            <tr>
+              <th>Column 1</th>
+              <th>Column 2</th>
+              <th>Column 3</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Row 1 Col 1</td>
+              <td>Row 1 Col 2</td>
+              <td>Row 1 Col 3</td>
+            </tr>
+            <tr>
+              <td>Row 2 Col 1</td>
+              <td>Row 2 Col 2</td>
+              <td>Row 2 Col 3</td>
+            </tr>
+            <tr>
+              <td>Row 3 Col 1</td>
+              <td>Row 3 Col 2</td>
+              <td>Row 3 Col 3</td>
+            </tr>
+            <tr>
+              <td>Row 4 Col 1</td>
+              <td>Row 4 Col 2</td>
+              <td>Row 4 Col 3</td>
+            </tr>
+            <tr>
+              <td>Row 5 Col 1</td>
+              <td>Row 5 Col 2</td>
+              <td>Row 5 Col 3</td>
+            </tr>
+            <tr>
+              <td>Row 6 Col 1</td>
+              <td>Row 6 Col 2</td>
+              <td>Row 6 Col 3</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="text-container">
+        <img src="./Pics/ICC-TV_Logo_white_talmz0 (1).svg" alt="">
+        <h4>Find the list of tournaments, series and matches that are available to be live-streamed within your region throughout the year!</h4>
+        <button class="btn btn-light">View the ICC.TV Guide ></button>
+      </div>
+      <img src="./Pics/Heros.png" alt="" class="img-fluid">
+    </div>
+    <div style="background-color: #0a0a0a; color: goldenrod; height: 500px;">
+      <h1>ICC Men's Player of the Month-June</h1>
+      <div>
+          <h1>Jasprit Bumrah</h1>
+          <img src="./Pics/Bumrah.jpeg" class="bumrah-image" alt="">
+      </div>
+  </div>
+    <div class="flex-container">
+      <div class="text-container">
+        <img src="./Pics/Icc logo blue.svg" alt="">
+        <h1>Family</h1>
+        <h4>Cricket's global fan community. Sign up today for exclusive content, priority ticket access and personalised news sent straight to your email</h4>
+        <button class="btn btn-light">Join Today for free ></button>
+      </div>
+      <img src="./Pics/Bangali.png" alt="" class="img-fluid">
+    </div>
+    <div class="footer">
+      <div>
+        <img src="./Pics/Emirates.png" alt="">
+        <img src="./Pics/Aramco.png" alt="">
+        <img src="./Pics/DP World.png" alt="">
+        <h5>Premier Partner</h5>
+        <hr>
+      </div>
+      <div>
+        <img src="./Pics/Coca Cola.png" alt="">
+        <h5>Global Partners</h5>
+        <hr>
+      </div>
+      <div>
+        <img src="./Pics/Royal Stag.png" alt="">
+        <img src="./Pics/Fan craze.png" alt="">
+        <img src="./Pics/near.png" alt="">
+        <h5>Official supporters</h5>
+        <img src="./Pics/cricket_4_sycngh.png" alt="">
+        <h5>Social responsibility</h5>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
